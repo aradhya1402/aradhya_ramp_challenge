@@ -21,7 +21,6 @@ export function InputSelect<TItem>({
   const onChange = useCallback<InputSelectOnChange<TItem>>(
     (selectedItem) => {
       if (selectedItem === null || selectedItem === 'All Employees') {
-        console.log("Yes" +selectedItem)
         consumerOnChange(null);  
         setSelectedValue(null);
         return
