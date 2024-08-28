@@ -51,8 +51,6 @@ export function InputSelect<TItem>({
         inputValue,
       }) => {
         const toggleProps = getToggleButtonProps()
-        console.log("SELECTED ITEM " + JSON.stringify(selectedItem))
-
         const parsedSelectedItem = selectedItem === null || selectedItem==="All Employees" ? null : parseItem(selectedItem)
       
         return (
